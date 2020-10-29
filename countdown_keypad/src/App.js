@@ -34,7 +34,7 @@ function App() {
   }
 
   return (
-    <div className="App" style={appStyle} >
+    <div className="App" >
       <header className="App-header">
         <div background="dark-1" align="center" style={{margin: "auto"}, {width: "100%"}}>
         {isSuccess ? <h1 style={{margin: "auto"}, {width: "100%"}}>Success!!!!!!!!!!!!!!</h1> 
@@ -62,7 +62,9 @@ function App() {
           {/* <Button number={"Clear"} onClick={() => clearValue()} disabled={btnDisabled} /> */}
           <br />
         </div>
+        <div style={{textAlign: "center"}}>
           <button onClick={clearValue} style={{ backgroundColor: "red"}}>Clear</button>
+        </div>
       </header>
     </div>
   );
@@ -70,9 +72,6 @@ function App() {
 
 export default App;
 
-const appStyle = {
-  // backgroundColor: "gray" 
-}
 const btnContainer = {
   textAlign: "center"
 }
