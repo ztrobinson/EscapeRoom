@@ -10,6 +10,10 @@ function App() {
   const [isSuccess, setIsSuccess] = useState(false);
   const [btnDisabled, setBtnDisabled] = useState(false);
 
+  //i want to be able to enter any number length and it dynamically populate the
+  // interface with the correct number of blank boxes that the user can enter guesses in
+  const [testval, setTestval] = useState([1,2,3,4]);
+
 
   function appendNumber(number){
     var newValue = parseInt(value.toString() + number.toString());
@@ -39,10 +43,20 @@ function App() {
         <div background="dark-1" align="center" style={{margin: "auto"}, {width: "100%"}}>
         {isSuccess ? <h1 style={{margin: "auto"}, {width: "100%"}}>Success!!!!!!!!!!!!!!</h1> 
         : <h1 style={{margin: "auto"}, {width: "100%"}} alignSelf="center" textAlign="center">Code: {value}</h1>}
+        {testval.map((answer) => (
+            <div className="answerBox">{answer}</div>
+        ))}
+
+        {/* {[...correctValue].forEach(x => (
+          
+          <div className="answerBox"></div>
+        ))} */}
+
+{/* 
         <div className="answerBox"></div>
         <div className="answerBox"></div>
         <div className="answerBox"></div>
-        <div className="answerBox"></div>
+        <div className="answerBox"></div> */}
         </div>
         <div style={btnContainer}>
 
