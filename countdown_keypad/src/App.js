@@ -3,6 +3,7 @@ import logo from './logo.svg';
 // import './App.css';
 import Button from './button.js';
 import './styles/app.scss';
+import Timer from 'react-compound-timer';
 
 function App() {
   const [guess, setGuess] = useState([]);
@@ -35,7 +36,13 @@ function App() {
         <div background="dark-1" align="center" style={{margin: "auto"}, {width: "100%"}}>
         {isSuccess ? <h1 className="successHeading">Success!!!!!!!!!!!!!!</h1>
         : <h1 style={{margin: "auto"}, {width: "100%"}} alignSelf="center" textAlign="center"></h1>}
-
+     
+      <Timer>
+        <h1>
+          <Timer.Minutes />m <Timer.Seconds />s
+        </h1>
+      </Timer>
+      <br/>
 
         {correctValue.map((answer, index) => (
             <div className="answerBox">{typeof guess[index] === 'undefined' ? 'X' : guess[index].toString()}</div>
