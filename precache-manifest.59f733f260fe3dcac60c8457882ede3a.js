@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b09b6131ba189deb65281d5e1e32e9bd",
+    "revision": "fb571d3e6506e29310b76c961fc7af12",
     "url": "/EscapeRoom/index.html"
   },
   {
-    "revision": "c22a831652b99e531060",
-    "url": "/EscapeRoom/static/css/main.aaadd25b.chunk.css"
+    "revision": "1dc3332deb2624ecb668",
+    "url": "/EscapeRoom/static/css/main.89cd9b34.chunk.css"
   },
   {
     "revision": "dafd420f57cf1d76d73f",
@@ -16,12 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/EscapeRoom/static/js/2.42352afd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c22a831652b99e531060",
-    "url": "/EscapeRoom/static/js/main.5f9a0c63.chunk.js"
+    "revision": "1dc3332deb2624ecb668",
+    "url": "/EscapeRoom/static/js/main.187feb71.chunk.js"
   },
   {
     "revision": "e87c8b7b230b6d7c7e76",
     "url": "/EscapeRoom/static/js/runtime-main.04962018.js"
+  },
+  {
+    "revision": "5d2d7733cea399422636b329992f009f",
+    "url": "/EscapeRoom/static/media/DIGITALDREAMFAT.5d2d7733.ttf"
   },
   {
     "revision": "a694b36d98e29299b0108ebf98b91027",
