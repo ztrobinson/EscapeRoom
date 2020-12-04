@@ -33,7 +33,7 @@ function App() {
     <div className="App" >
       <header className="App-header">
         <div background="dark-1" align="center" style={{margin: "auto"}, {width: "100%"}}>
-        {isSuccess ? <h1 style={{margin: "auto"}, {width: "100%"}}>Success!!!!!!!!!!!!!!</h1>
+        {isSuccess ? <h1 className="successHeading">Success!!!!!!!!!!!!!!</h1>
         : <h1 style={{margin: "auto"}, {width: "100%"}} alignSelf="center" textAlign="center"></h1>}
 
 
