@@ -3,7 +3,9 @@ import logo from './logo.svg';
 // import './App.css';
 import Button from './button.js';
 import './styles/app.scss';
+// import './styles/fonts/digitaldream/DIGITALDREAM.tff';
 import Timer from 'react-compound-timer';
+
 
 function App() {
   const [guess, setGuess] = useState([]);
@@ -34,15 +36,15 @@ function App() {
     <div className="App" >
       <header className="App-header">
         <div background="dark-1" align="center" style={{margin: "auto"}, {width: "100%"}}>
-        {isSuccess ? <h1 className="successHeading">Success!!!!!!!!!!!!!!</h1>
+        {isSuccess ? <h1 className="successHeading">Success!!!!</h1>
         : <h1 style={{margin: "auto"}, {width: "100%"}} alignSelf="center" textAlign="center"></h1>}
      
       <Timer      
         initialTime={1000 * 60 * 15}
         direction="backward"
         >
-        <h1>
-          <Timer.Minutes />m <Timer.Seconds />s
+        <h1 className="digitalClock digitalFont">
+          <Timer.Minutes /> minutes <Timer.Seconds /> seconds
         </h1>
       </Timer>
       <br/>
@@ -70,6 +72,8 @@ function App() {
           {/* <Button number={"Clear"} onClick={() => clearValue()} disabled={btnDisabled} /> */}
           <br />
         </div>
+        <br/>
+        <br/>
         <div style={{textAlign: "center"}}>
           <button onClick={clearValue} style={{ backgroundColor: "red"}}>Clear</button>
         </div>

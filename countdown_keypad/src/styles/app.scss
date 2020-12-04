@@ -22,3 +22,21 @@ body {
     padding: 10px;
     border: 2px green solid;
 }
+
+@font-face {
+    font-family: digitaldream;
+    src: url(/font/DIGITALDREAMFAT.tff);
+}
+
+@font-face {
+    font-family: 'digitaldream';
+    src: local('digitaldream'), url('../fonts/DIGITALDREAMFAT.ttf') format('truetype');
+}
+
+.digitalFont {
+    font-family: digitaldream;
+}
+
+.digitalClock {
+    color: #b80404;
+}
