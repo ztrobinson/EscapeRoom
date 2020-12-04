@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fb571d3e6506e29310b76c961fc7af12",
+    "revision": "de6cea145741a10e9c169ce5e9c66b6c",
     "url": "/EscapeRoom/index.html"
   },
   {
-    "revision": "1dc3332deb2624ecb668",
-    "url": "/EscapeRoom/static/css/main.89cd9b34.chunk.css"
+    "revision": "7bbb7d2d0b759ee8b906",
+    "url": "/EscapeRoom/static/css/main.5c95ba75.chunk.css"
   },
   {
     "revision": "dafd420f57cf1d76d73f",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/EscapeRoom/static/js/2.42352afd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1dc3332deb2624ecb668",
-    "url": "/EscapeRoom/static/js/main.187feb71.chunk.js"
+    "revision": "7bbb7d2d0b759ee8b906",
+    "url": "/EscapeRoom/static/js/main.e45e7d67.chunk.js"
   },
   {
     "revision": "e87c8b7b230b6d7c7e76",
