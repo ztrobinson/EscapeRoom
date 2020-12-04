@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/EscapeRoom/static/css/main.6d3ef4c3.chunk.css",
+    "main.css": "/EscapeRoom/static/css/main.c89c598b.chunk.css",
     "main.js": "/EscapeRoom/static/js/main.a139624d.chunk.js",
     "main.js.map": "/EscapeRoom/static/js/main.a139624d.chunk.js.map",
     "runtime-main.js": "/EscapeRoom/static/js/runtime-main.04962018.js",
@@ -8,9 +8,9 @@
     "static/js/2.06f6f178.chunk.js": "/EscapeRoom/static/js/2.06f6f178.chunk.js",
     "static/js/2.06f6f178.chunk.js.map": "/EscapeRoom/static/js/2.06f6f178.chunk.js.map",
     "index.html": "/EscapeRoom/index.html",
-    "precache-manifest.1865e1c9dcca1f583ebc891f403474c9.js": "/EscapeRoom/precache-manifest.1865e1c9dcca1f583ebc891f403474c9.js",
+    "precache-manifest.a4c378c618f65e4981bcedfdb6c3def2.js": "/EscapeRoom/precache-manifest.a4c378c618f65e4981bcedfdb6c3def2.js",
     "service-worker.js": "/EscapeRoom/service-worker.js",
-    "static/css/main.6d3ef4c3.chunk.css.map": "/EscapeRoom/static/css/main.6d3ef4c3.chunk.css.map",
+    "static/css/main.c89c598b.chunk.css.map": "/EscapeRoom/static/css/main.c89c598b.chunk.css.map",
     "static/js/2.06f6f178.chunk.js.LICENSE.txt": "/EscapeRoom/static/js/2.06f6f178.chunk.js.LICENSE.txt",
     "static/media/app.scss": "/EscapeRoom/static/media/brushedsteel.a694b36d.jpg",
     "static/media/logo.svg": "/EscapeRoom/static/media/logo.ee7cd8ed.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.04962018.js",
     "static/js/2.06f6f178.chunk.js",
-    "static/css/main.6d3ef4c3.chunk.css",
+    "static/css/main.c89c598b.chunk.css",
     "static/js/main.a139624d.chunk.js"
   ]
 }
