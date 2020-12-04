@@ -37,7 +37,10 @@ function App() {
         {isSuccess ? <h1 className="successHeading">Success!!!!!!!!!!!!!!</h1>
         : <h1 style={{margin: "auto"}, {width: "100%"}} alignSelf="center" textAlign="center"></h1>}
      
-      <Timer>
+      <Timer      
+        initialTime={1000 * 60 * 15}
+        direction="backward"
+        >
         <h1>
           <Timer.Minutes />m <Timer.Seconds />s
         </h1>
