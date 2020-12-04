@@ -5,34 +5,26 @@ import Button from './button.js';
 import './styles/app.scss';
 
 function App() {
-  const [value, setValue] = useState("");
-  const [correctValue, setCorrectValue] = useState(1234);
+  const [guess, setGuess] = useState([]);
+  const [correctValue, setCorrectValue] = useState([1,2,3,4]);
   const [isSuccess, setIsSuccess] = useState(false);
   const [btnDisabled, setBtnDisabled] = useState(false);
 
-  //i want to be able to enter any number length and it dynamically populate the
-  // interface with the correct number of blank boxes that the user can enter guesses in
-  const [testval, setTestval] = useState([1,2,3,4]);
-
 
   function appendNumber(number){
-    var newValue = parseInt(value.toString() + number.toString());
-    if (newValue == correctValue){
-      setIsSuccess(true);
-    } else {
-      setIsSuccess(false);
-    }
-    
-    if (newValue.toString().length < correctValue.toString().length){
-      setBtnDisabled(false);
-    } else {
-      setBtnDisabled(true);
-    }
-    setValue(newValue);
+    // var newValue = parseInt(value.toString() + number.toString());
+    var newVal = guess.concat(number);
+    setGuess(newVal);
+    guess.length + 1 < correctValue.length ? setBtnDisabled(false) : setBtnDisabled(true);
+    isGuessCorrect(newVal) ? setIsSuccess(true) : setIsSuccess(false);
+  }
+
+  function isGuessCorrect(val){
+    return JSON.stringify(val) === JSON.stringify(correctValue) ? true : false;
   }
 
   function clearValue(){
-    setValue("");
+    setGuess([]);
     setIsSuccess(false);
     setBtnDisabled(false);
   }
@@ -41,22 +33,14 @@ function App() {
     <div className="App" >
       <header className="App-header">
         <div background="dark-1" align="center" style={{margin: "auto"}, {width: "100%"}}>
-        {isSuccess ? <h1 style={{margin: "auto"}, {width: "100%"}}>Success!!!!!!!!!!!!!!</h1> 
-        : <h1 style={{margin: "auto"}, {width: "100%"}} alignSelf="center" textAlign="center">Code: {value}</h1>}
-        {testval.map((answer) => (
-            <div className="answerBox">{answer}</div>
+        {isSuccess ? <h1 style={{margin: "auto"}, {width: "100%"}}>Success!!!!!!!!!!!!!!</h1>
+        : <h1 style={{margin: "auto"}, {width: "100%"}} alignSelf="center" textAlign="center"></h1>}
+
+
+        {correctValue.map((answer, index) => (
+            <div className="answerBox">{typeof guess[index] === 'undefined' ? 'X' : guess[index].toString()}</div>
         ))}
 
-        {/* {[...correctValue].forEach(x => (
-          
-          <div className="answerBox"></div>
-        ))} */}
-
-{/* 
-        <div className="answerBox"></div>
-        <div className="answerBox"></div>
-        <div className="answerBox"></div>
-        <div className="answerBox"></div> */}
         </div>
         <div style={btnContainer}>
 
