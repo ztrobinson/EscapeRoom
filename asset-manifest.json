@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/EscapeRoom/static/css/main.999c55e6.chunk.css",
-    "main.js": "/EscapeRoom/static/js/main.8d334117.chunk.js",
-    "main.js.map": "/EscapeRoom/static/js/main.8d334117.chunk.js.map",
+    "main.css": "/EscapeRoom/static/css/main.6d3ef4c3.chunk.css",
+    "main.js": "/EscapeRoom/static/js/main.a139624d.chunk.js",
+    "main.js.map": "/EscapeRoom/static/js/main.a139624d.chunk.js.map",
     "runtime-main.js": "/EscapeRoom/static/js/runtime-main.04962018.js",
     "runtime-main.js.map": "/EscapeRoom/static/js/runtime-main.04962018.js.map",
     "static/js/2.06f6f178.chunk.js": "/EscapeRoom/static/js/2.06f6f178.chunk.js",
     "static/js/2.06f6f178.chunk.js.map": "/EscapeRoom/static/js/2.06f6f178.chunk.js.map",
     "index.html": "/EscapeRoom/index.html",
-    "precache-manifest.c659fd95ac53279b8f1d2cf246b02d8c.js": "/EscapeRoom/precache-manifest.c659fd95ac53279b8f1d2cf246b02d8c.js",
+    "precache-manifest.1865e1c9dcca1f583ebc891f403474c9.js": "/EscapeRoom/precache-manifest.1865e1c9dcca1f583ebc891f403474c9.js",
     "service-worker.js": "/EscapeRoom/service-worker.js",
-    "static/css/main.999c55e6.chunk.css.map": "/EscapeRoom/static/css/main.999c55e6.chunk.css.map",
+    "static/css/main.6d3ef4c3.chunk.css.map": "/EscapeRoom/static/css/main.6d3ef4c3.chunk.css.map",
     "static/js/2.06f6f178.chunk.js.LICENSE.txt": "/EscapeRoom/static/js/2.06f6f178.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/EscapeRoom/static/media/logo.ee7cd8ed.svg",
-    "static/media/app.scss": "/EscapeRoom/static/media/metalBackground.3afabe55.jpg"
+    "static/media/app.scss": "/EscapeRoom/static/media/brushedsteel.a694b36d.jpg",
+    "static/media/logo.svg": "/EscapeRoom/static/media/logo.ee7cd8ed.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.04962018.js",
     "static/js/2.06f6f178.chunk.js",
-    "static/css/main.999c55e6.chunk.css",
-    "static/js/main.8d334117.chunk.js"
+    "static/css/main.6d3ef4c3.chunk.css",
+    "static/js/main.a139624d.chunk.js"
   ]
 }
