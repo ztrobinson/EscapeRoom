@@ -44,14 +44,15 @@ function App() {
         direction="backward"
         >
         <h1 className="digitalClock digitalFont">
-          <Timer.Minutes /> minutes <Timer.Seconds /> seconds
+          <Timer.Minutes />:<Timer.Seconds />
         </h1>
       </Timer>
       <br/>
-
-        {correctValue.map((answer, index) => (
+        <div className="answerSection">
+          {correctValue.map((answer, index) => (
             <div className="answerBox">{typeof guess[index] === 'undefined' ? 'X' : guess[index].toString()}</div>
-        ))}
+            ))}
+        </div>
 
         </div>
         <div style={btnContainer}>
