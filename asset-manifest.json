@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/EscapeRoom/static/css/main.c1aff05d.chunk.css",
-    "main.js": "/EscapeRoom/static/js/main.e9ce1426.chunk.js",
-    "main.js.map": "/EscapeRoom/static/js/main.e9ce1426.chunk.js.map",
+    "main.js": "/EscapeRoom/static/js/main.7ee6bf82.chunk.js",
+    "main.js.map": "/EscapeRoom/static/js/main.7ee6bf82.chunk.js.map",
     "runtime-main.js": "/EscapeRoom/static/js/runtime-main.04962018.js",
     "runtime-main.js.map": "/EscapeRoom/static/js/runtime-main.04962018.js.map",
     "static/js/2.dec65a0d.chunk.js": "/EscapeRoom/static/js/2.dec65a0d.chunk.js",
     "static/js/2.dec65a0d.chunk.js.map": "/EscapeRoom/static/js/2.dec65a0d.chunk.js.map",
     "index.html": "/EscapeRoom/index.html",
-    "precache-manifest.f1bd4ba8e84b8a5f28dbbcc0c9c929f8.js": "/EscapeRoom/precache-manifest.f1bd4ba8e84b8a5f28dbbcc0c9c929f8.js",
+    "precache-manifest.67f596bbe8feda919de9a81b3c183ae4.js": "/EscapeRoom/precache-manifest.67f596bbe8feda919de9a81b3c183ae4.js",
     "service-worker.js": "/EscapeRoom/service-worker.js",
     "static/css/main.c1aff05d.chunk.css.map": "/EscapeRoom/static/css/main.c1aff05d.chunk.css.map",
     "static/js/2.dec65a0d.chunk.js.LICENSE.txt": "/EscapeRoom/static/js/2.dec65a0d.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.04962018.js",
     "static/js/2.dec65a0d.chunk.js",
     "static/css/main.c1aff05d.chunk.css",
-    "static/js/main.e9ce1426.chunk.js"
+    "static/js/main.7ee6bf82.chunk.js"
   ]
 }
