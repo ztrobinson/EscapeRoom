@@ -11,6 +11,16 @@
     padding: 15px;
 }
 
+.enablePasscodeResetButton {
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: black;
+    border: none;
+    
+}
+
 body {
     background-image: url('../images/brushedsteel.jpg');
   }
@@ -131,4 +141,19 @@ color:#ff0404;
 
 .keypadContainer {
     text-align: center;
+}
+
+.clearButton {
+    background-color: red;
+    min-height: 2em;
+    width: 30%;
+    max-width: 6em;
+    color: white; 
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 3px;
+    border: solid 2px darkgray;
+    // box-shadow: black 4px 6px 1px;
+    // transition: .2s;
+    font-size: x-large;
 }
