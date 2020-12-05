@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/EscapeRoom/static/css/main.06e11554.chunk.css",
+    "main.css": "/EscapeRoom/static/css/main.c1aff05d.chunk.css",
     "main.js": "/EscapeRoom/static/js/main.e9ce1426.chunk.js",
     "main.js.map": "/EscapeRoom/static/js/main.e9ce1426.chunk.js.map",
     "runtime-main.js": "/EscapeRoom/static/js/runtime-main.04962018.js",
@@ -8,9 +8,9 @@
     "static/js/2.dec65a0d.chunk.js": "/EscapeRoom/static/js/2.dec65a0d.chunk.js",
     "static/js/2.dec65a0d.chunk.js.map": "/EscapeRoom/static/js/2.dec65a0d.chunk.js.map",
     "index.html": "/EscapeRoom/index.html",
-    "precache-manifest.12ce24ee0f9c29a4db76bfe4efe24da6.js": "/EscapeRoom/precache-manifest.12ce24ee0f9c29a4db76bfe4efe24da6.js",
+    "precache-manifest.f1bd4ba8e84b8a5f28dbbcc0c9c929f8.js": "/EscapeRoom/precache-manifest.f1bd4ba8e84b8a5f28dbbcc0c9c929f8.js",
     "service-worker.js": "/EscapeRoom/service-worker.js",
-    "static/css/main.06e11554.chunk.css.map": "/EscapeRoom/static/css/main.06e11554.chunk.css.map",
+    "static/css/main.c1aff05d.chunk.css.map": "/EscapeRoom/static/css/main.c1aff05d.chunk.css.map",
     "static/js/2.dec65a0d.chunk.js.LICENSE.txt": "/EscapeRoom/static/js/2.dec65a0d.chunk.js.LICENSE.txt",
     "static/media/app.scss": "/EscapeRoom/static/media/brushedsteel.a694b36d.jpg",
     "static/media/logo.svg": "/EscapeRoom/static/media/logo.ee7cd8ed.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.04962018.js",
     "static/js/2.dec65a0d.chunk.js",
-    "static/css/main.06e11554.chunk.css",
+    "static/css/main.c1aff05d.chunk.css",
     "static/js/main.e9ce1426.chunk.js"
   ]
 }
