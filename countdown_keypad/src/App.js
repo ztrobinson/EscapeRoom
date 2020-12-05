@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import logo from './logo.svg';
 import Button from './button.js';
 import './styles/app.scss';
@@ -16,6 +16,13 @@ function App() {
 
   const [isEnablePasscodeResetButtonVisible, setEnablePasscodeResetButtonVisible] = useState(true);
   const [isSetButtonVisible, setIsSetButtonVisible] = useState(false);
+
+  function goFullScreen(){
+    document.documentElement.webkitRequestFullScreen();
+  }
+  useEffect(() => {
+    goFullScreen();
+  });
 
   function appendNumber(number) {
     // var newValue = parseInt(value.toString() + number.toString());
@@ -58,7 +65,7 @@ function App() {
   }
 
   function updateCorrectAnswer() {
-    setCorrectValue(guess);
+    guess.length > 3 && setCorrectValue(guess);
     clearValue();
   }
 
