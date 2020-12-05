@@ -37,8 +37,7 @@ function App() {
       <header className="App-header">
         <div background="dark-1" align="center" style={{margin: "auto"}, {width: "100%"}}>
         {isSuccess ? <h1 className="successHeading">Success!!!!</h1>
-        : <h1 style={{margin: "auto"}, {width: "100%"}} alignSelf="center" textAlign="center"></h1>}
-     
+        :   
       <Timer      
         initialTime={1000 * 60 * 15}
         direction="backward"
@@ -47,6 +46,7 @@ function App() {
           <Timer.Minutes />:<Timer.Seconds />
         </h1>
       </Timer>
+}
       <br/>
         <div className="answerSection">
           {correctValue.map((answer, index) => (
@@ -55,7 +55,7 @@ function App() {
         </div>
 
         </div>
-        <div style={btnContainer}>
+        <div className="keypadContainer">
 
           <Button number={1} onClick={() => appendNumber(1)} disabled={btnDisabled} />
           <Button number={2} onClick={() => appendNumber(2)} disabled={btnDisabled} />
@@ -84,7 +84,3 @@ function App() {
 }
 
 export default App;
-
-const btnContainer = {
-  textAlign: "center"
-}

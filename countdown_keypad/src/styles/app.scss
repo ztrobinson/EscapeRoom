@@ -43,6 +43,11 @@ body {
 .digitalClock {
     color: #b80404;
     animation: flicker 1.5s infinite alternate; 
+    background-color: #131313;
+    // padding-bottom: 50px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #5c4a4a;
 }
 
 
@@ -121,4 +126,9 @@ color:#ff0404;
         text-shadow: none;
         box-shadow: none;
     }    
+}
+
+
+.keypadContainer {
+    text-align: center;
 }

@@ -1,6 +1,7 @@
 .btnStyle {    
-    height: 50px;
-    width: 10%;
+    min-height: 2em;
+    width: 25%;
+    max-width: 6em;
     color: white; 
     background-color: black;
     cursor: pointer;
@@ -9,7 +10,7 @@
     border: solid 2px darkgray;
     box-shadow: black 4px 6px 1px;
     transition: .2s;
-
+    font-size: xx-large;
 }
 .btnStyle:focus {
     box-shadow: black 0px 0px 0px;
