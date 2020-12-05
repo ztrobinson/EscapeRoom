@@ -28,11 +28,12 @@ function App() {
     // var newValue = parseInt(value.toString() + number.toString());
     var newVal = guess.concat(number);
     setGuess(newVal);
-    guess.length + 1 < correctValue.length ? setBtnDisabled(false) : inputLengthReached(newVal);
+    // guess.length + 1 < correctValue.length ? setBtnDisabled(false) : inputLengthReached(newVal);
+    guess.length + 1 == correctValue.length && inputLengthReached(newVal);
   }
 
   function inputLengthReached(newVal) {
-    setBtnDisabled(true)
+    // setBtnDisabled(true)
     isGuessCorrect(newVal) ? setIsSuccess(true) : makeMissionFailure();
   }
 
@@ -57,7 +58,7 @@ function App() {
   function clearValue() {
     setGuess([]);
     setIsSuccess(false);
-    setBtnDisabled(false);
+    // setBtnDisabled(false);
     setIsMissionFailure(false);
     setIsToriWin(false);
     setEnablePasscodeResetButtonVisible(false);
