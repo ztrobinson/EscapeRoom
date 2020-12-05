@@ -25,6 +25,7 @@
     font-size: xx-large;
     color: black;
     transition: .1s;
+    outline: none;
 }
 // .btnStyle:focus {
 //     box-shadow: black 0px 0px 0px;
@@ -35,4 +36,5 @@
     box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
     inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
     transition: .1s;
+    outline: none;
 }
