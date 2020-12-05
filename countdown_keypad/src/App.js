@@ -120,7 +120,7 @@ function App() {
         <br />
         <br />
         <div style={{ textAlign: "center" }}>
-          <button onClick={clearValue} className="clearButton">Clear</button>
+          <button onClick={clearValue} className="clearButton">Reset</button>
           {isSetButtonVisible && <button onClick={updateCorrectAnswer} className="clearButton">Set</button> }
         </div>
       </header>
