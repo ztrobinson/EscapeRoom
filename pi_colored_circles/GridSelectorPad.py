@@ -47,6 +47,8 @@ def thing_on(pin):
     GPIO.output(pin, GPIO.LOW)
 def thing_off(pin):
     GPIO.output(pin, GPIO.HIGH)
+
+
     
     
 #Main
