@@ -1,5 +1,7 @@
 #! /usr/bin/env python3
 
+#icon attribution: Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a>
+
 from guizero import App, Text, TextBox, PushButton, Slider, Picture, Waffle
 import RPi.GPIO as GPIO
 import time
