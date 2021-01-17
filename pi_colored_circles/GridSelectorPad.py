@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 
 from guizero import App, Text, TextBox, PushButton, Slider, Picture, Waffle
 import RPi.GPIO as GPIO
