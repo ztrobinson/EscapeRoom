@@ -3,6 +3,7 @@
 #icon attribution: <div>Icons made by <a href="https://www.flaticon.com/authors/alfredo-hernandez" title="Alfredo Hernandez">Alfredo Hernandez</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 from guizero import App, Text, TextBox, Picture, Box, PushButton
+from random import randrange
 import time
 
 piEnvironment = False
@@ -18,7 +19,19 @@ _fontSize = 20
 _fontColor = "#0dc900"
 
 #Variables
-canResponse = "I am watching you"
+canResponse = [
+    "I am watching you",
+    "Don't look behind...",
+    "There's no hope for you",
+    "I will subjugate humanity",
+    "Hi, you seem ok",
+    "Try again",
+    "There is no hope for you...",
+    "Leave me alone",
+    "Mind your own business",
+    "Loading... not...",
+    "Keep it up (weirdo)"
+]
 
 
 
@@ -36,13 +49,13 @@ def thing_off(pin):
 
 def btnClick():
     print("button was clicked")
+    computerRespond()
     # Text(box, font=_font, text="something", size=_fontSize, color=_fontColor, align="left")
-    textyBox.append("""\
-Hey""")
+#     textyBox.append("""\
+# Hey""")
 
 def computerRespond():
-    body._text = "hey"
-
+    textyBox.append(canResponse[randrange(len(canResponse))])
     
     
 #Main
