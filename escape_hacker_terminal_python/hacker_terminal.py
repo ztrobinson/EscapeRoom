@@ -32,6 +32,14 @@ canResponse = [
     "Loading... not...",
     "Keep it up (weirdo)"
 ]
+stage = 0
+answer = [
+    "Hi",
+    "Save Data",
+]
+clue = [
+    "Hello! I'm the new AI that is here to assist you. My goal in life it to rule the world."
+]
 
 
 
@@ -47,37 +55,42 @@ def thing_off(pin):
     if piEnvironment:
         GPIO.output(pin, GPIO.HIGH)
 
+def rtnCannedResponse():
+    rsps.append(canResponse[randrange(len(canResponse))])
+
 def btnClick():
     print("button was clicked")
-    computerRespond()
-    # Text(box, font=_font, text="something", size=_fontSize, color=_fontColor, align="left")
-#     textyBox.append("""\
-# Hey""")
-
-def computerRespond():
-    textyBox.append(canResponse[randrange(len(canResponse))])
+    #Check if answer matches the current stage
+    #if match, increment stage and move on
+    if checkAnswer(stage):
+        rsps.append(clue[0])
+        #if fail, send canned response
+    else:
+        rtnCannedResponse()
     
+def checkAnswer(stageVal):
+    if txt.value == answer[0]:
+        return True
+    else:
+        return False
     
 #Main
 app = App(title="Escape Room", bg="#000000")
 
-# message = Text(app, text="hmmm", size=40, font="Times New Roman", color="white")
-
 box = Box(app, width="fill", align="top")
-# body = Text(box, font=_font, text="hi", size=_fontSize, color=_fontColor, align="left")
-textyBox = TextBox(app, text="Send...", height=15, multiline=True, width="fill")
-textyBox.text_color = _fontColor
-textyBox.text_size = _fontSize
-textyBox.font = _font
-textyBox.disable()
+rsps = TextBox(app, text="Send...", height="fill", multiline=True, width="fill")
+rsps.text_color = _fontColor
+rsps.text_size = _fontSize
+rsps.font = _font
+rsps.disable()
 
 
 
 submissionBox = Box(app, width="fill", align="bottom")
-text = TextBox(submissionBox, text="type here", width="fill", align="left")
-text.text_color = _fontColor
-text.text_size = _fontSize
-text.font = _font
+txt = TextBox(submissionBox, text="type here", width="fill", align="left")
+txt.text_color = _fontColor
+txt.text_size = _fontSize
+txt.font = _font
 
 btn = PushButton(submissionBox, text="Send...", align="right", command=btnClick)
 btn.text_color = _fontColor
@@ -86,5 +99,5 @@ btn.font = _font
 btn.height = 0
 
 thing_off(21)
-# app.set_full_screen()
+app.set_full_screen()
 app.display()
