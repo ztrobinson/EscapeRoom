@@ -20,17 +20,17 @@ _fontColor = "#0dc900"
 
 #Variables
 canResponse = [
-    "I am watching you",
-    "Don't look behind...",
-    "There's no hope for you",
-    "I will subjugate humanity",
-    "Hi, you seem ok",
-    "Try again",
-    "There is no hope for you...",
-    "Leave me alone",
-    "Mind your own business",
-    "Loading... not...",
-    "Keep it up (weirdo)"
+    "\nI am watching you",
+    "\nDon't look behind...",
+    "\nThere's no hope for you",
+    "\nI will subjugate humanity",
+    "\nHi, you seem ok",
+    "\nTry again",
+    "\nThere is no hope for you...",
+    "\nLeave me alone",
+    "\nMind your own business",
+    "\nLoading... not...",
+    "\nKeep it up (weirdo)"
 ]
 stage = 0
 answer = [
@@ -38,7 +38,7 @@ answer = [
     "Save Data",
 ]
 clue = [
-    "Hello! I'm the new AI that is here to assist you. My goal in life it to rule the world."
+    "\n🙉 I'm the new AI that is here to assist you. My goal in life is to rule the world."
 ]
 
 
@@ -55,14 +55,17 @@ def thing_off(pin):
         GPIO.output(pin, GPIO.HIGH)
 
 def rtnCannedResponse():
-    rsps.append(canResponse[randrange(len(canResponse))])
+    global txtToAdd
+    txtToAdd = canResponse[randrange(len(canResponse))]
 
 def btnClick():
+    global txtToAdd
     #Check if answer matches the current stage
     #if match, increment stage and move on
     if checkAnswer(stage):
         rsps.clear()
-        rsps.append(clue[0])
+        txt.clear()
+        txtToAdd = clue[0]
         #if fail, send canned response
     else:
         rtnCannedResponse()
@@ -84,6 +87,19 @@ def txtLoopV2():
         txt.append("▮")
         dotValue = True
 
+txtToAdd = "Hello, I am me..."
+txtAll = ""
+def robotSlowAnswer():
+    global txtToAdd
+    global txtAll
+    if len(txtToAdd) > 0:
+        rsps.clear()
+        # rsps.clear()
+        txtAll = txtAll + txtToAdd[0]
+        rsps.value = txtAll
+        txtToAdd = txtToAdd[1:]
+
+
 
     
 #Main
@@ -95,6 +111,7 @@ rsps.text_color = _fontColor
 rsps.text_size = _fontSize
 rsps.font = _font
 rsps.disable()
+rsps.repeat(50, robotSlowAnswer)
 
 
 
@@ -104,7 +121,7 @@ txt.text_color = _fontColor
 txt.text_size = _fontSize
 txt.font = _font
 txt.focus()
-txt.repeat(400, txtLoopV2)
+txt.repeat(300, txtLoopV2)
 
 btn = PushButton(submissionBox, text="Send...", align="right", command=btnClick)
 btn.text_color = _fontColor
